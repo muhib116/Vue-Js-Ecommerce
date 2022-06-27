@@ -1,0 +1,7 @@
+mystery box @ 5 bdt = 2760
+mystery box @ 50 bdt = 2759
+mystery box @ 100 bdt = 2758
+mystery box @ 500 bdt = 2757
+mystery box @ 1000 bdt = 2756
+mystery box @ 3000 bdt = 2755
+mystery box @ 5000 bdt = 2754
