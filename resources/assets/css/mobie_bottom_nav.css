@@ -1,0 +1,37 @@
+.mobie_bottom_nav{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    padding: 0 1rem;
+    gap: 10px;
+    box-shadow: 0 -1px 4px #0004;
+}
+.mobie_bottom_nav>*{
+    display: grid;
+    justify-content: center;
+    gap: 4px;
+    color: #666;
+    padding: 15px 5px;
+    font-weight: 400;
+    font-size: 0.8rem;
+    text-align: center;
+}
+.mobie_bottom_nav>* .icon{
+    font-size: 1.15rem;
+}
+.mobie_bottom_nav>*:hover{
+    color: var(--primary_color);
+}
+
+
+
+@media all and (min-width: 901px){
+    .mobie_bottom_nav{
+        display: none;
+    }
+}

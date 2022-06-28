@@ -13,7 +13,7 @@ define('VENDOR', 3);
 define('STAFF', 4);
 define('USER', 5);
 
-Route::get('/{any}', function(){
+Route::get('{any}', function () {
     return view('frontend.home');
 })->where('any', '.*');
 

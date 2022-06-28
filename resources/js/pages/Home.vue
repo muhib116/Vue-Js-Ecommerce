@@ -1,3 +1,10 @@
+<script setup>
+import Banner from "../components/Banner.vue";
+import Categories from "../components/Categories.vue";
+import Products from "../components/Products.vue";
+</script>
 <template>
-    <h1>Home Page</h1>
+    <Banner></Banner>
+    <Categories />
+    <Products />
 </template>

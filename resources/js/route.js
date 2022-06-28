@@ -8,7 +8,7 @@ import About from './pages/About.vue'
 
 const routers = [
     {
-        path: '/home',
+        path: '',
         name: 'Home',
         component: Home
     },

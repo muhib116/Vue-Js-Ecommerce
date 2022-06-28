@@ -1,0 +1,82 @@
+._rating_wrapper{
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+._rating_wrapper .avarage_rating {
+    display: grid;
+    place-content: center;
+    justify-content: center;
+    text-align: center;
+    border-right: 1px solid var(--border_color);
+}
+
+._rating_wrapper  .avarage {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+._rating_wrapper  .out_of {
+    font-size: 0.9rem;
+}
+
+._rating_wrapper  .rating {
+    margin: 10px 0;
+}
+
+._rating_wrapper  .total_rating {
+    font-size: 0.8rem;
+    color: #aaa;
+}
+
+._rating_wrapper  .rating_classification {
+    display: grid;
+    place-content: center;
+}
+
+._rating_wrapper  .rating_classification > div {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+._rating_wrapper  .rating_classification div .progress {
+    width: 124px;
+    background: lightgray;
+    height: 5px;
+    border-radius: 4px;
+    position: relative;
+}
+
+._rating_wrapper  .progress_bar {
+    position: absolute;
+    width: var(--width);
+    height: 100%;
+    background: var(--rating_color);
+    border-radius: 4px;
+}
+._rating_wrapper  .rating_classification .rating{
+    width: 90px;
+    margin: 4px 0px;
+}
+._rating_wrapper  .rating_classification div .progress span{
+    position: absolute;
+    right: -14px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 0.8rem;
+}
+
+
+@media all and (max-width: 600px){
+    ._rating_wrapper{
+        grid-template-columns: 1fr;
+    }
+    ._rating_wrapper .avarage_rating{
+        border-right: unset;
+        border-bottom: 1px solid var(--border_color);
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+    }
+}

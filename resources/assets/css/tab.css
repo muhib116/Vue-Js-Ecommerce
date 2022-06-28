@@ -1,0 +1,35 @@
+.tab_wrapper{
+    background-color: #fff8ea;
+}
+.tab_wrapper>*{
+    display: grid;
+    gap: 2rem;
+    padding: 4rem 0;
+}
+.tab_btn_wrapper{
+    display: flex;
+    gap: 1rem;
+}
+.tab_btn_wrapper button{
+    padding: 6px 15px;
+    color: #666;
+    border-radius: 40px;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+}
+.tab_btn_wrapper button:is(:hover,.active){
+    background: var(--primary_color);
+    color: #fff;
+}
+.tab_wrapper .tab_content{
+    background-color: #fff;
+    min-height: 100px;
+    display: none;
+    box-shadow: 0 0 6px #0001;
+}
+.tab_wrapper .tab_content.active{
+    display: block;
+}
+.tab_wrapper .tab_content p{
+    margin-top: 0;
+}

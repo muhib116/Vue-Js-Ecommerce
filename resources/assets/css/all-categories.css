@@ -1,0 +1,30 @@
+.all_categories {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.all_categories>.cat_item {
+    border: 1px solid var(--border_color);
+    display: grid;
+    grid-template-columns: 0.6fr 1fr;
+    align-items: center;
+}
+
+.all_categories>.cat_item .sub_cats {
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: #666;
+    line-height: 1.4;
+}
+
+.all_categories>.cat_item .content {
+    padding: 1rem;
+}
+
+.all_categories>.cat_item .cat_name {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    font-weight: 500;
+}

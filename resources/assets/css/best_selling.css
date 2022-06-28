@@ -1,0 +1,105 @@
+.best_selling_products_container .product_item{
+    border: 1px solid var(--border_color);
+}
+.best_selling_products_container .product_item .product_info{
+    display: grid;
+    grid-template-columns: 0.6fr 1fr;
+    align-items: center;
+    position: relative;
+}
+.best_selling_products_container .product_item .img{
+    aspect-ratio: 1/1 !important;
+    border-right: 1px solid var(--border_color);
+}
+.best_selling_products_container .product_item .content{
+    padding: 10px 15px;
+    display: grid;
+    gap: 5px;
+}
+.best_selling_products_container .product_item .name{
+    font-weight: normal;
+    margin: 0;
+}
+.best_selling_products_container .product_item .attributer{
+    display: grid;
+    gap: 5px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 5px;
+    display: none;
+}
+
+.best_selling_products_container .product_item .attributer>*{
+    aspect-ratio: 1/1;
+    padding: 4px;
+    width: 30px;
+    height: 30px;
+    display: grid;
+    place-content: center;
+    font-size: 0.8rem;
+}
+.best_selling_products_container .product_item .attributer .wishlist{
+    background: var(--product_wishlist_bg);
+    color: #fff;
+    filter: grayscale(1);
+}
+.best_selling_products_container .product_item .attributer .quickview{
+    background: var(--product_view_bg);
+    color: #fff;
+    filter: grayscale(1);
+    transition: var(--transition);
+}
+.best_selling_products_container .product_item .attributer :is(.wishlist,.quickview):is(:hover,.active){
+    filter: grayscale(0);
+}
+
+.best_selling_products_container .product_item .msg{
+    position: absolute;
+    color: #fff;
+    top: 60%;
+    left: 18px;
+    padding: 0px 15px 0px 15px;
+    font-size: 12px;
+    transform-origin: left top;
+    transform: rotateZ(90deg) translateX(-50%);
+}
+.best_selling_products_container .product_item .msg.success{
+    background-color: var(--success_color);
+}
+.best_selling_products_container .product_item .msg.danger{
+    background-color: var(--danger_color);
+}
+.best_selling_products_container .product_item .msg.warning{
+    background-color: var(--warning_color);
+}
+.best_selling_products_container .product_item .add_to_cart{
+    background-color: var(--primary_color);
+    color: #fff;
+    width: 100%;
+    padding: 5px 15px;
+    transition: var(--transition);
+    text-transform: uppercase;
+    position: relative;
+    font-weight: 400;
+}
+.best_selling_products_container .product_item .add_to_cart .count{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 50px;
+    aspect-ratio: 1/1;
+    background: var(--danger_color);
+    display: grid;
+    place-content: center;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 10% 100%);
+}
+.best_selling_products_container .product_item .add_to_cart:is(:hover,.active)
+{
+    background-color: var(--success_color);
+}
+.best_selling_products_container .product_item .rating{
+    margin-left: unset;
+    margin-right: unset;
+}

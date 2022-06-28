@@ -1,0 +1,119 @@
+.shop_banner_wrapper .shop_banner{
+    padding: 60px 25px 25px;
+    min-height: 180px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+
+/* social media start */
+.social_wrapper{
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    background-color: #fff;
+    width: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0 1px 2px #0008;
+}
+.social_wrapper a{
+    display: grid;
+    place-content: center;
+    width: 30px;
+    height: 30px;
+    background-color: var(--bgcolor);
+    color: #fff;
+}
+/* social media start */
+
+
+/* shop logo and info start */
+.shop_banner_wrapper .shop_logo{
+    display: block;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 1px 4px #0002, 0 1px 6px #0001;
+}
+.shop_banner_wrapper .banner_left {
+    display: grid;
+    align-items: center;
+    gap: 5px;
+}
+.shop_banner_wrapper .banner_left .shop_name{
+    margin: 0;
+    font-size: 1.5rem;
+    color: #000;
+}
+.shop_banner_wrapper .banner_left .shop_rating_wrapper{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #000;
+}
+.shop_banner_wrapper .banner_left .rating{
+    margin: unset;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 80px;
+}
+/* shop logo and info end */
+
+
+/* contact and location start */
+.contact_and_location{
+    justify-self: end;
+    display: grid;
+    gap: 5px;
+    text-align: right;
+    background: #fff7;
+    padding: 15px;
+    margin-top: 10px;
+    backdrop-filter: blur(5px);
+}
+.contact_and_location a{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 0.9rem;
+}
+.contact_and_location a:hover{
+    color: inherit;
+    transform: unset;
+}
+.contact_and_location a .icon{
+    width: 25px;
+    height: 25px;
+    background-color: var(--primary_color);
+    display: grid;
+    place-content: center;
+    color: #fff;
+}
+/* contact and location end */
+
+/* shop navigation start */
+.shop_navigation>*{
+    background-color: #000;
+    display: flex;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.shop_navigation a{
+    display: block;
+    padding: 10px 15px;
+    color: #fff8;
+    text-transform: uppercase;
+    font-size:0.8rem; 
+}
+.shop_navigation a:is(:hover,.active){
+    color: #fff;
+    transform: unset;
+}
+/* shop navigation end */

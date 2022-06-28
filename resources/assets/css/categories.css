@@ -1,0 +1,14 @@
+.category_container .cat_item{
+    border: 1px solid var(--border_color);
+    padding: 10px;
+}
+.category_container .cat_item a{
+    display: grid;
+    text-align: center;
+    font-size: 0.9rem;
+}
+.category_container .cat_item .name{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}

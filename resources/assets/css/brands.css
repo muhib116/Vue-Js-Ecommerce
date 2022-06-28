@@ -1,0 +1,17 @@
+.all_brands_container .all_brands{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+.all_brands_container .all_brands .brand_item{
+    width: 100%;
+    border: 1px solid var(--border_color);
+    aspect-ratio: 2/1;
+
+}
+.all_brands_container .all_brands .brand_item{
+    padding: 0 1rem;
+}
+.all_brands_container .all_brands .brand_item img{
+    object-fit: contain;
+}
