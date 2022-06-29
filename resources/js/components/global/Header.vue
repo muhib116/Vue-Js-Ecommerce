@@ -68,9 +68,9 @@
         <!-- middlebar start -->
         <div class="middlebar_wrapper">
             <div class="container py_0">
-                <a href="#" class="brand_logo">
+                <router-link active-class="active" :to="{name:'Home'}"  class="brand_logo">
                     <img src="https://shop.activeitzone.com/public/uploads/all/CZOY12JMJOU8D73wMnx25x9eMXFGPdHgRdxi4zuh.png" alt="brands">
-                </a>
+                </router-link>
 
                 <form action="#" method="get">
                     <input type="search" placeholder="Searce...">
@@ -93,10 +93,16 @@
         <!-- bottombar start -->
         <div class="container py_0">
             <nav class="bottom_bar_wrapper">
-                <router-link :to="{name:'Home'}">Home</router-link>
-                <a href="#">All Categories</a>
-                <a href="#">All Shops</a>
-                <a href="#">Offers</a>
+                <router-link active-class="active" :to="{name:'Home'}">Home</router-link>
+                <router-link active-class="active" :to="{name:'AllCategories'}">
+                    All Categories
+                </router-link>
+                <router-link active-class="active" :to="{name:'AllShops'}">
+                    All Shops
+                </router-link>
+                <router-link active-class="active" :to="{name:'Offers'}">
+                    Offers
+                </router-link>
                 <a href="#">Men Clothing & Fashion</a>
                 <a href="#">Computer & Accessories</a>
                 <button class="mobile_category_close">
@@ -114,7 +120,7 @@
     }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
     /* topbar start */
     .header_wrapper .topbar_wrapper{
         font-size: 0.8rem;
@@ -122,6 +128,10 @@
         border-bottom: 1px solid var(--border_color);
         padding: 5px 0;
         color: var(--topbar_text_color);
+
+        a:hover{
+            color: var(--topbar_text_color);
+        }
     }
     .header_wrapper .topbar_wrapper>*{
         display: flex;
@@ -231,6 +241,10 @@
         line-height: 1.2;
         color: #666;
         font-weight: 500;
+
+        &:is(:hover,.active){
+            color: var(--primary_color)
+        }
     }
     .mobile_category_close{
         display: none;

@@ -29,6 +29,7 @@ Auth::routes();
 Route::get('recentprod', 'HomeController@recent');
 Route::get('/updateuser', 'PavelController@updateuser');
 Route::get('/updatebr', 'PavelController@updatebr');
+
 //SSLCOMMERZ END
 Route::get('sitemap','SitemapController@index');
 Route::get('sitemap.xml','SitemapController@index')->name('sitemap');
@@ -40,11 +41,13 @@ Route::get('category-sitemap', 'SitemapController@catSitemap')->name('category-s
 Route::any('keyword', 'HomeController@keywords')->name('keywords');
 Route::get('category/{catslug}', 'HomeController@maincategory')->name('main.category');
 Route::get('category/{catslug?}/{subslug?}/{childslug?}', 'HomeController@category')->name('home.category');
+
 //search products
 Route::get('search', 'HomeController@search')->name('product.search');
 
 Route::get('product/{slug?}', 'HomeController@product_details')->name('product_details');
 Route::get('product/b2b/{slug?}', 'HomeController@b2bproduct_details')->name('b2bproduct_details');
+
 Route::get('cart/add', 'CartController@cartAdd')->name('cart.add');
 Route::get('cart', 'CartController@cartView')->name('cart');
 Route::get('cart/update', 'CartController@cartUpdate')->name('cart.update');
@@ -64,9 +67,11 @@ Route::get('checkout/shipping/{buy_product_id?}', 'User\CheckoutController@shipp
 Route::get('order/paypal/payment/{orderId}', 'PaypalController@paypalPayment')->name('paypalPayment');
 Route::get('paypal/payment/status/success', 'PaypalController@paymentSuccess')->name('paypalPaymentSuccess');
 Route::get('paypal/payment/status/cancel', 'PaypalController@paymentCancel')->name('paypalPaymentCancel');
+
 //order tracking
 Route::get('order-tracking', 'User\OrderController@orderTracking')->name('orderTracking');
 Route::get('check/unique/value', 'AjaxController@checkField')->name('checkField');
+
 //product quickview
 Route::get('quickview/product/{product_id}', 'HomeController@quickview')->name('quickview');
 

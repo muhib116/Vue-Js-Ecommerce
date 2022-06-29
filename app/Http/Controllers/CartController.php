@@ -103,10 +103,6 @@ class CartController extends Controller
 			
 			
             if ($getOffer) {
-			
-			
-        
-			
 				$carttaka = Cart::where('product_id', 2760)->where('offer_id', 84)->where('user_id', $user_id)->count();
 			if ($carttaka >= 1) {
 				

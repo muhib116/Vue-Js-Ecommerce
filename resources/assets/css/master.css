@@ -22,7 +22,7 @@
 
     --default_text_color: #444;
 
-    --topbar_bg: var(--primary_color);
+    --topbar_bg: #3292ff;
     --topbar_text_color: #fff;
     --topbar_border_color: #fff4;
 
@@ -201,116 +201,9 @@ table :is(th, td){
 
 
 
-/* product counter start */
-.product_counter{
-    display: flex;
-    width: fit-content;
-    border: 1px solid var(--primary_color);
-}
-.product_counter input{
-    padding: 2px;
-    width: 50px;
-    text-align: center;
-    appearance: none;
-    border-radius: 0;
-    border: none;
-    font-size: 14px;
-    background: transparent;
-}
-.product_counter input:focus{
-    box-shadow: unset;
-}
-.product_counter button{
-    border: none;
-    background: var(--primary_color);
-    color: #fff;
-    display: grid;
-    place-content: center;
-    min-width: 20px;
-    aspect-ratio: 1/1;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 0;
-}
-/* product counter end */
-
-
-/* qnty up down start */
-.quantity {
-    width: fit-content;
-    text-align: center;
-    border: 1px solid #0001;
-    display: flex;
-}
-.quantity input{
-    padding: 6px;
-    text-align: center;
-    font-size: 12px;
-    border-radius: 0px;
-    border:
-    none;
-    border-left: 1px solid #0001;
-    border-right: 1px solid #0001;
-    width: 45px;
-    height: 38px;
-}
-.quantity button{
-    background-color: #f7f7f7;
-    width: 30px;
-    border: none;
-    outline: none;
-    transition: var(--transition);
-    aspect-ratio: 1/1;
-}
-.quantity button:hover{
-    background-color: var(--secondary_color);
-    color: #fff;
-}
-/* qnty up down end */
-
-
-
-
 
 
 /* global style */
-.rating {
-    margin: 15px auto 5px;
-    width: 120px;
-    position: relative;
-}
-
-.rating::after,
-.rating::before {
-    content: "";
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    height: 100%;
-    width: calc(100% - 2px);
-    z-index: 2;
-    background: var(--rating_default_color);
-}
-
-.rating::after {
-    background: var(--rating_default_color);
-    z-index: 0;
-}
-
-.rating.active::before {
-    background: var(--rating_color);
-}
-
-.rating img {
-    position: relative;
-    z-index: 9;
-}
-
-.rating.active::before {
-    width: var(--rating);
-    border-radius: 0;
-}
-
 .section_header {
     display: flex;
     justify-content: space-between;

@@ -44,11 +44,14 @@ class HomeController extends Controller
         $data = [];
         //get all homepage section
         $data['sections'] = HomepageSection::where('status', 1)->orderBy('position', 'asc')->paginate(3);
+        
+
         //check ajax request
         if ($request->ajax()) {
             $view = view('frontend.homepage.homesection', $data)->render();
             return response()->json(['html'=>$view]);
         }
+        
         $data['sliders'] = Slider::where('status', 1)->where('type', 'homepage')->orderBy('position', 'asc')->get();
         return view('frontend.home')->with($data);
     }
