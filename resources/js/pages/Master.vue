@@ -16,6 +16,10 @@
         methods:{
             changeValue(value){
                 this.$store.commit('increment', value);
+            },
+            parentHandler: function () {
+                this.$refs.modal1.close();
+                this.$refs.modal2.open();
             }
         }
     }

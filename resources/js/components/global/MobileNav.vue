@@ -6,7 +6,7 @@
                 Home
             </router-link>
             
-            <button class="Categories" title="Categories">
+            <button class="Categories" @click.prevent="$store.commit('catNavToggler', true)" title="Categories">
                 <i class="icon fa fa-th-large"></i>
                 Categories
             </button>
@@ -30,7 +30,7 @@
     export default {
         mounted(){
             // category toggler for mobile start
-            let CategoriesBtn = document.querySelectorAll('.mobie_bottom_nav .Categories,.mobile_category_close');
+            /* let CategoriesBtn = document.querySelectorAll('.mobie_bottom_nav .Categories,.mobile_category_close');
             let bottom_bar_wrapper = document.querySelector('.bottom_bar_wrapper');
             if(CategoriesBtn && bottom_bar_wrapper)
             {
@@ -41,7 +41,7 @@
                 {
                     bottom_bar_wrapper.classList.toggle('active');
                 }
-            }
+            } */
             // category toggler for mobile end
         }
     }

@@ -1,16 +1,16 @@
 <template>
     <div class="product_counter">
         <button type="button" @click="productQntyUpDown(-1)">-</button>
-        <input type="text" :min="min" :value="quantity" :max="max">
+        <input type="text" :min="min" :value="qnty" :max="max">
         <button type="button" @click="productQntyUpDown(+1)">+</button>
     </div>
 </template>
 
 <script>
     export default {
-        data() {
+        data(){
             return {
-                quantity: 1
+                qnty: 1
             }
         },
         props: {
@@ -20,19 +20,30 @@
             max: {
                 default: 1
             },
-            productId: undefined
+            productId: {
+                default:undefined
+            },
+            quantity: {
+                default: 1
+            },
+        },
+        mounted(){
+            this.qnty = this.quantity
+        },
+        updated(){
+            this.qnty = this.quantity
         },
         methods: {
             productQntyUpDown(value){
                 value = parseInt(value);
-                if((this.quantity > this.min) && value<0)
-                    this.quantity--;
+                if((this.qnty > this.min) && value<0)
+                    this.qnty--;
 
-                if((this.quantity < this.max) && value>0)
-                    this.quantity ++;
+                if((this.qnty < this.max) && value>0)
+                    this.qnty ++;
 
                 // updateCart
-                this.$store.commit('UpdateCartItem', {ProductId:this.productId, TotalQuantity:this.quantity});
+                this.$store.commit('UpdateCartItem', {ProductId:this.productId, TotalQuantity:this.qnty});
             }
         }
     }

@@ -3,62 +3,61 @@ import { createStore } from 'vuex'
 const store = createStore({
     state () {
       return {
-        count: 0,
-        cartItems: [
-            {
-                'product_name': "This is product name This is product name This",
-                'product_id': "1",
-                'product_img': "https://shop.activeitzone.com/public/uploads/all/f121PGFfa83b4nf5R04lhwQSM3VxCtyyrYWZf1Hn.webp",
-                'product_price': {
-                    regular: 120,
-                    current: 200,
-                    discount: 0
-                },
-                'qnty': 1,
-                'attributes': [
-                    {
-                        name:"size", 
-                        value:'S'
-                    },
-                    {
-                        name:"color", 
-                        value:'red'
-                    }
-                ],
-                stock: 3
-            },
-            {
-                'product_name': "ASUS ROG Phone 2 (New) Unlocked GSM US Version & Warranty",
-                'product_id': "2",
-                'product_img': "https://shop.activeitzone.com/public/uploads/all/UloibGzNcLOvClXvXj4sZK9eOMMt5NnoYEfr2uNi.webp",
-                'product_price': {
-                    regular: 150,
-                    current: 100,
-                    discount: 0
-                },
-                'qnty': 3,
-                'attributes': [
-                    {
-                        name:"size", 
-                        value:'S'
-                    },
-                    {
-                        name:"color", 
-                        value:'red'
-                    }
-                ],
-                stock: 10
-            }
-        ]
+        catNavToggler: false,
+        cartItems: []
       }
     },
 
-    mutations: {
-        increment (state, numberToAdd) {
-            state.count += numberToAdd;
+    mutations: 
+    {
+        catNavToggler (state, status) {
+            state.catNavToggler = status;
         },
 
-        AddToCart(state){},
+        AddToCart(state, $data)
+        {
+            let ExistanceStatus = false;
+            for(let i=0; i<state.cartItems.length; i++){
+                if(state.cartItems[i].product_id == $data.id){
+                    ExistanceStatus = true;
+                    break;
+                }
+            }
+
+            if(!ExistanceStatus){
+                let productInfo = {
+                    'product_name': $data.name,
+                    'product_id': $data.id,
+                    'product_img': $data.thumbnail_image,
+                    'product_price': {
+                        base: $data.base_price,
+                        base_discounted: $data.base_discounted_price,
+                        discount: $data.discount
+                    },
+                    'qnty': 1,
+                    'attributes': [
+                        {
+                            name:"size", 
+                            value:'S'
+                        }
+                    ],
+                    stock: $data.stock,
+                    unit: $data.unit
+                }
+                state.cartItems.push(productInfo);
+            }else
+            {
+                state.cartItems.filter(item=>{
+                    if(item.product_id==$data.id){
+                        item.qnty += 1;
+                    }
+                })
+            }
+
+            
+            // update localStorage
+            localStorage.setItem('cart', JSON.stringify(state.cartItems))
+        },
 
         UpdateCartItem(state, {ProductId, TotalQuantity})
         {
@@ -66,6 +65,9 @@ const store = createStore({
                 if(item.product_id==ProductId)
                     item.qnty = TotalQuantity;
             })
+
+            // update localStorage
+            localStorage.setItem('cart', JSON.stringify(state.cartItems));
         },
 
         DeleteCartItem(state, ProductId){
@@ -74,18 +76,20 @@ const store = createStore({
             });
 
             state.cartItems = newCartItems;
+            
+            // update localStorage
+            localStorage.setItem('cart', JSON.stringify(state.cartItems));
+        },
+
+        setCartItemFromLocalStorage(state, cartData)
+        {
+            state.cartItems = JSON.parse(cartData);
         }
     },
 
     actions: {},
 
     getters: {
-        getNumber(state){
-            state.myNumber.forEach(element => {
-                console.log(element);
-            });
-        },
-
         // calucalate total items on cart
         totalCartItem(state){
             let totalItem = 0;
@@ -98,15 +102,30 @@ const store = createStore({
 
         totalCartAmount(state){
             let totalAmount = 0;
-            state.cartItems.forEach(item=>{
-                let prices = item.product_price;
-
-                totalAmount += (prices.regular > prices.current) ? (prices.current*item.qnty) : (prices.regular*item.qnty);
-            })
+            if(state.cartItems.length>0){
+                state.cartItems.forEach(item=>{
+                    let prices = item.product_price;
+                    console.log(prices)
+    
+                    totalAmount += (prices.base_discounted > 0) ? (prices.base_discounted*item.qnty) : (prices.base*item.qnty);
+                })
+            }
 
             return totalAmount;
-        }
+        },
+        GetSingleProductQnty: (state)=>(ProductId)=>{
+            let qnty = 0;
+            state.cartItems.filter(item=>{
+                if(item.product_id==ProductId){
+                    qnty = item.qnty;
+                }
+            });
+
+            return qnty;
+        },
     }
-})
+
+});
+
 
 export default store;

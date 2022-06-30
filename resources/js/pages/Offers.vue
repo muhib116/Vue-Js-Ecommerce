@@ -43,8 +43,18 @@
 </template>
 
 <script>
+import config from '../config'
+
     export default {
-        
+        data(){
+            return {
+                offerList: []
+            }
+        },
+        async mounted(){
+            let response = await config.callAPI('offers/running');
+            this.offerList = response.data;
+        }
     }
 </script>
 

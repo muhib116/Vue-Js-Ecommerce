@@ -17,7 +17,7 @@ import EmptyCart from '../EmptyCart.vue'
 <!-- cart open button end -->
 
 <!-- cart start -->
-    <div :class="($store.getters.totalCartItem==0) ? ['cart_wrapper empty active'] : 'cart_wrapper'" >
+    <div :class="($store.getters.totalCartItem==0) ? ['cart_wrapper empty'] : 'cart_wrapper'" >
 
         <!-- cart header -->
         <div class="card_header">
@@ -52,11 +52,12 @@ import EmptyCart from '../EmptyCart.vue'
                     </div>
                     <div class="info">
                         <p class="product_name">{{product.product_name}}</p>
-                        <ProductCounter :productId="product.product_id" :max="product.stock" />
+                        <ProductCounter :productId="product.product_id" :max="product.stock" :quantity="product.qnty" />
                     </div>
                     <div class="price_wrapper">
-                        <del v-if="product.product_price.regular>product.product_price.current">{{product.product_price.regular}}$</del>
-                        <span>{{product.product_price.current}}$</span>
+                        <del v-if="product.product_price.base_discounted>0">{{product.product_price.base}}$</del>
+                        <span v-if="product.product_price.base_discounted>0">{{product.product_price.base_discounted}}$</span>
+                        <span v-else>{{product.product_price.base}}$</span>
                     </div>
                 </div>
                 <!-- /single cart item -->
@@ -103,6 +104,11 @@ import EmptyCart from '../EmptyCart.vue'
                 }
             }
             // cart toggle end
+
+
+            if(localStorage.getItem('cart')){
+                this.$store.commit('setCartItemFromLocalStorage', localStorage.getItem('cart'));
+            }
         }
     }
 </script>

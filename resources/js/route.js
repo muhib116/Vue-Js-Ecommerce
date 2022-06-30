@@ -7,6 +7,7 @@ import CategoryWiseProducts from './pages/CategoryWiseProducts.vue'
 import AllCategories from './pages/AllCategories.vue'
 import AllShops from './pages/AllShops.vue'
 import Offers from './pages/Offers.vue'
+import Wishlist from './pages/Wishlist.vue'
 // pages import end
 
 const routers = [
@@ -16,7 +17,7 @@ const routers = [
         component: Home
     },
     {
-        path: '/category/:slug',
+        path: '/category/:id',
         name: 'CategoryWiseProducts',
         component: CategoryWiseProducts
     },
@@ -34,6 +35,11 @@ const routers = [
         path: '/offers',
         name: 'Offers',
         component: Offers
+    },
+    {
+        path: '/my-wishlist',
+        name: 'Wishlist',
+        component: Wishlist
     },
     {
         path: "/:pathMatch(.*)*",

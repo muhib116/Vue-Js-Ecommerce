@@ -12,7 +12,7 @@
                 <div id="categories-carousel">
                     
                     <div v-for="cat in categories" :key="cat.name" class="cat_item">
-                        <router-link :to="{name:'CategoryWiseProducts', params: { slug: cat.url }}">
+                        <router-link :to="{name:'CategoryWiseProducts', params: { id: cat.id }}">
                             <img :src="cat.icon" :alt="cat.name">
                             <p class="name" :title="cat.name">{{cat.name}}</p>
                         </router-link>
