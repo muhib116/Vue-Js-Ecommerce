@@ -22546,7 +22546,7 @@ var _hoisted_14 = {
 
 var _hoisted_15 = /*#__PURE__*/_withScopeId(function () {
   return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
-    "class": "fa fa-heart"
+    "class": "fa fa-columns"
   }, null, -1
   /* HOISTED */
   );
@@ -22555,12 +22555,28 @@ var _hoisted_15 = /*#__PURE__*/_withScopeId(function () {
 var _hoisted_16 = /*#__PURE__*/_withScopeId(function () {
   return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
     "class": "count"
-  }, "5", -1
+  }, "3", -1
   /* HOISTED */
   );
 });
 
 var _hoisted_17 = /*#__PURE__*/_withScopeId(function () {
+  return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+    "class": "fa fa-heart"
+  }, null, -1
+  /* HOISTED */
+  );
+});
+
+var _hoisted_18 = /*#__PURE__*/_withScopeId(function () {
+  return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
+    "class": "count"
+  }, "5", -1
+  /* HOISTED */
+  );
+});
+
+var _hoisted_19 = /*#__PURE__*/_withScopeId(function () {
   return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
     "class": "icon fa fa-user"
   }, null, -1
@@ -22568,40 +22584,18 @@ var _hoisted_17 = /*#__PURE__*/_withScopeId(function () {
   );
 });
 
-var _hoisted_18 = /*#__PURE__*/_withScopeId(function () {
-  return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
-    href: "#"
-  }, "Login", -1
-  /* HOISTED */
-  );
-});
-
-var _hoisted_19 = /*#__PURE__*/_withScopeId(function () {
-  return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", null, "|", -1
-  /* HOISTED */
-  );
-});
-
-var _hoisted_20 = /*#__PURE__*/_withScopeId(function () {
-  return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
-    href: "#"
-  }, "Registration", -1
-  /* HOISTED */
-  );
-});
-
-var _hoisted_21 = {
+var _hoisted_20 = {
   "class": "container py_0"
 };
-var _hoisted_22 = {
+var _hoisted_21 = {
   "class": "bottom_bar_wrapper"
 };
 
-var _hoisted_23 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" All Seller ");
+var _hoisted_22 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" All Seller ");
 
-var _hoisted_24 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Offers ");
+var _hoisted_23 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Offers ");
 
-var _hoisted_25 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<a href=\"#\" data-v-1bd27444>Coupon</a><a href=\"#\" data-v-1bd27444>Computer &amp; Accessories</a><button class=\"mobile_category_close\" data-v-1bd27444><svg id=\"Layer_1\" fill=\"currentColor\" width=\"16px\" height=\"16px\" viewBox=\"0 0 122.878 122.88\" enable-background=\"new 0 0 122.878 122.88\" xml:space=\"preserve\" data-v-1bd27444><g data-v-1bd27444><path d=\"M1.426,8.313c-1.901-1.901-1.901-4.984,0-6.886c1.901-1.902,4.984-1.902,6.886,0l53.127,53.127l53.127-53.127 c1.901-1.902,4.984-1.902,6.887,0c1.901,1.901,1.901,4.985,0,6.886L68.324,61.439l53.128,53.128c1.901,1.901,1.901,4.984,0,6.886 c-1.902,1.902-4.985,1.902-6.887,0L61.438,68.326L8.312,121.453c-1.901,1.902-4.984,1.902-6.886,0 c-1.901-1.901-1.901-4.984,0-6.886l53.127-53.128L1.426,8.313L1.426,8.313z\" data-v-1bd27444></path></g></svg></button>", 3);
+var _hoisted_24 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<a href=\"#\" data-v-1bd27444>Coupon</a><a href=\"#\" data-v-1bd27444>Computer &amp; Accessories</a><button class=\"mobile_category_close\" data-v-1bd27444><svg id=\"Layer_1\" fill=\"currentColor\" width=\"16px\" height=\"16px\" viewBox=\"0 0 122.878 122.88\" enable-background=\"new 0 0 122.878 122.88\" xml:space=\"preserve\" data-v-1bd27444><g data-v-1bd27444><path d=\"M1.426,8.313c-1.901-1.901-1.901-4.984,0-6.886c1.901-1.902,4.984-1.902,6.886,0l53.127,53.127l53.127-53.127 c1.901-1.902,4.984-1.902,6.887,0c1.901,1.901,1.901,4.985,0,6.886L68.324,61.439l53.128,53.128c1.901,1.901,1.901,4.984,0,6.886 c-1.902,1.902-4.985,1.902-6.887,0L61.438,68.326L8.312,121.453c-1.901,1.902-4.984,1.902-6.886,0 c-1.901-1.901-1.901-4.984,0-6.886l53.127-53.128L1.426,8.313L1.426,8.313z\" data-v-1bd27444></path></g></svg></button>", 3);
 
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_router_link = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("router-link");
@@ -22627,7 +22621,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     /* STABLE */
 
   }), _hoisted_13, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_14, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
-    "class": "wishlist_btn",
+    "class": "wishlist_btn compare_btn",
     to: {
       name: 'Wishlist'
     }
@@ -22638,7 +22632,19 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     _: 1
     /* STABLE */
 
-  }), _hoisted_17, _hoisted_18, _hoisted_19, _hoisted_20])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" middlebar end "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" bottombar start "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_21, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("nav", _hoisted_22, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
+    "class": "wishlist_btn",
+    to: {
+      name: 'Wishlist'
+    }
+  }, {
+    "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+      return [_hoisted_17, _hoisted_18];
+    }),
+    _: 1
+    /* STABLE */
+
+  }), _hoisted_19, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <a href=\"#\">Login</a>\r\n                    <span>|</span>\r\n                    <a href=\"#\">Registration</a> ")])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" middlebar end "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" bottombar start "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_20, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("nav", _hoisted_21, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
     href: "",
     onClick: _cache[0] || (_cache[0] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.withModifiers)(function ($event) {
       return _ctx.$store.commit('catNavToggler', true);
@@ -22650,7 +22656,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     }
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-      return [_hoisted_23];
+      return [_hoisted_22];
     }),
     _: 1
     /* STABLE */
@@ -22662,12 +22668,12 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     }
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-      return [_hoisted_24];
+      return [_hoisted_23];
     }),
     _: 1
     /* STABLE */
 
-  }), _hoisted_25])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" bottombar end ")]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["CatNav"])], 64
+  }), _hoisted_24])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" bottombar end ")]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["CatNav"])], 64
   /* STABLE_FRAGMENT */
   );
 }
@@ -23353,15 +23359,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
 function render(_ctx, _cache, $props, $setup, $data, $options) {
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Banner3"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Categories"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Products"], {
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Banner2"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Categories"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Products"], {
     title: "Todays Deal"
-  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Banner2"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Products"], {
+  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Banner"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Products"], {
     title: "New Arraival",
     product_type: "new_arrival"
   }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["BigBanner"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Products"], {
     title: "Top Rated",
     product_type: "top_ratted"
-  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Banner"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["FeaturedShop"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Coupon"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["BestSellingProducts"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["LimitedTimeOffer"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["WomenProducts"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["TopShop"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["OffCanvasCart"])], 64
+  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Banner3"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["FeaturedShop"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Coupon"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["BestSellingProducts"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["LimitedTimeOffer"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["WomenProducts"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["TopShop"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["OffCanvasCart"])], 64
   /* STABLE_FRAGMENT */
   );
 }
@@ -30254,7 +30260,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "/* topbar start */\n.header_wrapper .topbar_wrapper[data-v-1bd27444] {\n  display: none;\n  font-size: 0.8rem;\n  background-color: var(--topbar_bg);\n  border-bottom: 1px solid var(--border_color);\n  padding: 5px 0;\n  color: var(--topbar_text_color);\n}\n.header_wrapper .topbar_wrapper a[data-v-1bd27444]:hover {\n  color: var(--topbar_text_color);\n}\n.header_wrapper .topbar_wrapper > *[data-v-1bd27444] {\n  display: flex;\n  justify-content: space-between;\n}\n.header_wrapper .topbar_wrapper .left[data-v-1bd27444],\n.header_wrapper .topbar_wrapper .right[data-v-1bd27444] {\n  display: flex;\n  flex-wrap: wrap;\n  gap: 0.6rem;\n  align-items: center;\n}\n.header_wrapper .topbar_wrapper :is(.left, .right) > * + *[data-v-1bd27444] {\n  border-left: 1px solid var(--topbar_border_color);\n  padding-left: 0.6rem;\n}\n\n/* topbar start */\n/* middlebar start */\n.middlebar_wrapper[data-v-1bd27444] {\n  border-bottom: 1px solid var(--border_color);\n  padding: 0.8rem 0;\n}\n.middlebar_wrapper > *[data-v-1bd27444] {\n  display: grid;\n  grid-template-columns: 150px 1fr 250px;\n  align-items: center;\n  gap: 1rem;\n}\n.middlebar_wrapper form[data-v-1bd27444] {\n  position: relative;\n  max-width: 450px;\n  width: 100%;\n  margin: auto;\n}\n.middlebar_wrapper form input[data-v-1bd27444] {\n  border-color: rgba(0, 0, 0, 0.1333333333);\n  padding-left: 25px;\n  padding-right: 55px;\n  border-radius: 2px;\n  border-radius: 40px;\n}\n.middlebar_wrapper form input[data-v-1bd27444]:focus {\n  border-color: var(--primary_color);\n}\n.middlebar_wrapper form button[type=submit][data-v-1bd27444] {\n  position: absolute;\n  top: 50%;\n  right: 5px;\n  transform: translate(0, -50%);\n  border: none;\n  background: var(--primary_color);\n  height: 80%;\n  aspect-ratio: 1/1;\n  font-size: 1.4rem;\n  color: #fff;\n  cursor: pointer;\n  border-radius: 40px;\n  transition: var(--transition);\n}\n.middlebar_wrapper form button[type=submit][data-v-1bd27444]:hover {\n  box-shadow: 0 1px 5px var(--primary_color);\n  border-radius: 40px;\n}\n.middlebar_wrapper .login_registration[data-v-1bd27444] {\n  display: flex;\n  gap: 0.5rem;\n  justify-content: flex-end;\n  align-items: center;\n  font-weight: 500;\n}\n.middlebar_wrapper .login_registration .icon[data-v-1bd27444] {\n  font-size: 1.2rem;\n  background-color: var(--primary_color);\n  color: #fff;\n  padding: 5px;\n  width: 35px;\n  min-width: 35px;\n  aspect-ratio: 1/1 !important;\n  display: grid;\n  place-content: center;\n  border-radius: 50%;\n  margin-right: 5px;\n  box-shadow: 0 1px 10px var(--primary_color);\n}\n.middlebar_wrapper .login_registration span[data-v-1bd27444] {\n  font-weight: 300;\n  font-size: 20px;\n}\n.wishlist_btn[data-v-1bd27444] {\n  width: 35px;\n  min-width: 35px;\n  background: var(--danger_color);\n  position: relative;\n  aspect-ratio: 1/1;\n  display: grid;\n  place-content: center;\n  padding: 5px;\n  font-size: 1rem;\n  box-shadow: 0 1px 10px var(--danger_color);\n  border-radius: 50%;\n  color: #fff;\n  margin-right: 5px;\n}\n.wishlist_btn .count[data-v-1bd27444] {\n  position: absolute;\n  top: 2px;\n  right: 2px;\n  transform: translate(50%, -50%);\n  font-size: 0.8rem !important;\n  aspect-ratio: 1/1;\n  display: grid;\n  place-content: center;\n  width: 25px;\n  background: var(--danger_color);\n  border-radius: 50%;\n  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1333333333);\n  color: white;\n  border: 2px solid;\n}\n\n/* middlebar end */\n/* bottombar start */\n.bottom_bar_wrapper[data-v-1bd27444] {\n  display: flex;\n  justify-content: center;\n  flex-wrap: wrap;\n  padding: 5px 0;\n  gap: 0.5rem;\n  font-size: 0.95rem;\n  border-bottom: 1px solid var(--border_color);\n}\n.bottom_bar_wrapper a[data-v-1bd27444] {\n  padding: 5px 5px;\n  line-height: 1.2;\n  color: #666;\n  font-weight: 500;\n}\n.bottom_bar_wrapper a[data-v-1bd27444]:is(:hover, .active) {\n  color: var(--primary_color);\n}\n.mobile_category_close[data-v-1bd27444] {\n  display: none;\n}\n\n/* bottombar end */\n@media all and (max-width: 900px) {\n.topbar_wrapper[data-v-1bd27444] {\n    display: none;\n}\nnav.bottom_bar_wrapper[data-v-1bd27444] {\n    padding-top: 40px;\n    display: flex;\n    flex-direction: column;\n    position: fixed;\n    top: 0;\n    left: 0;\n    background: #fff;\n    width: 100%;\n    height: 100%;\n    justify-content: flex-start;\n    transform: translateY(100%);\n    transition: var(--transition);\n    flex-wrap: nowrap;\n    overflow-y: auto;\n    z-index: 9;\n}\nnav.bottom_bar_wrapper.active[data-v-1bd27444] {\n    transform: translateY(0%);\n}\nnav.bottom_bar_wrapper > a[data-v-1bd27444] {\n    display: block;\n    padding: 10px 25px;\n}\nnav.bottom_bar_wrapper > a + a[data-v-1bd27444] {\n    border-top: 1px solid var(--border_color);\n}\n.bottom_bar_wrapper .mobile_category_close[data-v-1bd27444] {\n    position: absolute;\n    top: 10px;\n    right: 10px;\n    width: 35px;\n    height: 35px;\n    display: grid;\n    place-content: center;\n    background-color: var(--danger_color);\n    color: #fff;\n}\n}\n@media all and (max-width: 768px) {\n.middlebar_wrapper > *[data-v-1bd27444] {\n    display: flex;\n    flex-wrap: wrap;\n    justify-content: space-between;\n}\n.middlebar_wrapper form[data-v-1bd27444] {\n    max-width: 80%;\n    min-width: 80%;\n    display: block;\n    order: 2;\n}\n.middlebar_wrapper form button[type=submit][data-v-1bd27444] {\n    right: 5px;\n    left: unset;\n    transform: translateY(-50%);\n}\n.middlebar_wrapper .brand_logo[data-v-1bd27444] {\n    order: 0;\n    width: 150px;\n}\n.middlebar_wrapper .login_registration[data-v-1bd27444] {\n    order: 1;\n    width: 50%;\n    justify-self: flex-end;\n}\n}\n@media all and (max-width: 500px) {\n.middlebar_wrapper .login_registration .icon[data-v-1bd27444] {\n    display: none;\n}\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "/* topbar start */\n.header_wrapper .topbar_wrapper[data-v-1bd27444] {\n  display: none;\n  font-size: 0.8rem;\n  background-color: var(--topbar_bg);\n  border-bottom: 1px solid var(--border_color);\n  padding: 5px 0;\n  color: var(--topbar_text_color);\n}\n.header_wrapper .topbar_wrapper a[data-v-1bd27444]:hover {\n  color: var(--topbar_text_color);\n}\n.header_wrapper .topbar_wrapper > *[data-v-1bd27444] {\n  display: flex;\n  justify-content: space-between;\n}\n.header_wrapper .topbar_wrapper .left[data-v-1bd27444],\n.header_wrapper .topbar_wrapper .right[data-v-1bd27444] {\n  display: flex;\n  flex-wrap: wrap;\n  gap: 0.6rem;\n  align-items: center;\n}\n.header_wrapper .topbar_wrapper :is(.left, .right) > * + *[data-v-1bd27444] {\n  border-left: 1px solid var(--topbar_border_color);\n  padding-left: 0.6rem;\n}\n\n/* topbar start */\n/* middlebar start */\n.middlebar_wrapper[data-v-1bd27444] {\n  border-bottom: 1px solid var(--border_color);\n  padding: 0.8rem 0;\n}\n.middlebar_wrapper > *[data-v-1bd27444] {\n  display: grid;\n  grid-template-columns: 150px 1fr 250px;\n  align-items: center;\n  gap: 1rem;\n}\n.middlebar_wrapper form[data-v-1bd27444] {\n  position: relative;\n  max-width: 450px;\n  width: 100%;\n  margin: auto;\n}\n.middlebar_wrapper form input[data-v-1bd27444] {\n  border-color: rgba(0, 0, 0, 0.1333333333);\n  padding-left: 25px;\n  padding-right: 55px;\n  border-radius: 2px;\n  border-radius: 40px;\n}\n.middlebar_wrapper form input[data-v-1bd27444]:focus {\n  border-color: var(--primary_color);\n}\n.middlebar_wrapper form button[type=submit][data-v-1bd27444] {\n  position: absolute;\n  top: 50%;\n  right: 5px;\n  transform: translate(0, -50%);\n  border: none;\n  background: var(--primary_color);\n  height: 80%;\n  aspect-ratio: 1/1;\n  font-size: 1.4rem;\n  color: #fff;\n  cursor: pointer;\n  border-radius: 40px;\n  transition: var(--transition);\n}\n.middlebar_wrapper form button[type=submit][data-v-1bd27444]:hover {\n  box-shadow: 0 1px 5px var(--primary_color);\n  border-radius: 40px;\n}\n.middlebar_wrapper .login_registration[data-v-1bd27444] {\n  display: flex;\n  gap: 0.5rem;\n  justify-content: flex-end;\n  align-items: center;\n  font-weight: 500;\n}\n.middlebar_wrapper .login_registration .icon[data-v-1bd27444] {\n  font-size: 1.2rem;\n  background-color: var(--primary_color);\n  color: #fff;\n  padding: 5px;\n  width: 35px;\n  min-width: 35px;\n  aspect-ratio: 1/1 !important;\n  display: grid;\n  place-content: center;\n  border-radius: 50%;\n  margin-right: 5px;\n  box-shadow: 0 1px 10px var(--primary_color);\n}\n.middlebar_wrapper .login_registration span[data-v-1bd27444] {\n  font-weight: 300;\n  font-size: 20px;\n}\n.wishlist_btn[data-v-1bd27444] {\n  width: 35px;\n  min-width: 35px;\n  background: var(--danger_color);\n  position: relative;\n  aspect-ratio: 1/1;\n  display: grid;\n  place-content: center;\n  padding: 5px;\n  font-size: 1rem;\n  box-shadow: 0 1px 10px var(--danger_color);\n  border-radius: 50%;\n  color: #fff;\n  margin-right: 5px;\n}\n.wishlist_btn .count[data-v-1bd27444] {\n  position: absolute;\n  top: 2px;\n  right: 2px;\n  transform: translate(50%, -50%);\n  font-size: 0.8rem !important;\n  aspect-ratio: 1/1;\n  display: grid;\n  place-content: center;\n  width: 25px;\n  background: var(--danger_color);\n  border-radius: 50%;\n  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1333333333);\n  color: white;\n  border: 2px solid;\n}\n.wishlist_btn.compare_btn[data-v-1bd27444] {\n  background: var(--secondary_color);\n  box-shadow: 0 1px 10px var(--secondary_color);\n}\n.wishlist_btn.compare_btn .count[data-v-1bd27444] {\n  background: var(--secondary_color);\n}\n\n/* middlebar end */\n/* bottombar start */\n.bottom_bar_wrapper[data-v-1bd27444] {\n  display: flex;\n  justify-content: center;\n  flex-wrap: wrap;\n  padding: 5px 0;\n  gap: 0.5rem;\n  font-size: 0.95rem;\n  border-bottom: 1px solid var(--border_color);\n}\n.bottom_bar_wrapper a[data-v-1bd27444] {\n  padding: 5px 5px;\n  line-height: 1.2;\n  color: #666;\n  font-weight: 500;\n}\n.bottom_bar_wrapper a[data-v-1bd27444]:is(:hover, .active) {\n  color: var(--primary_color);\n}\n.mobile_category_close[data-v-1bd27444] {\n  display: none;\n}\n\n/* bottombar end */\n@media all and (max-width: 900px) {\n.topbar_wrapper[data-v-1bd27444] {\n    display: none;\n}\nnav.bottom_bar_wrapper[data-v-1bd27444] {\n    padding-top: 40px;\n    display: flex;\n    flex-direction: column;\n    position: fixed;\n    top: 0;\n    left: 0;\n    background: #fff;\n    width: 100%;\n    height: 100%;\n    justify-content: flex-start;\n    transform: translateY(100%);\n    transition: var(--transition);\n    flex-wrap: nowrap;\n    overflow-y: auto;\n    z-index: 9;\n}\nnav.bottom_bar_wrapper.active[data-v-1bd27444] {\n    transform: translateY(0%);\n}\nnav.bottom_bar_wrapper > a[data-v-1bd27444] {\n    display: block;\n    padding: 10px 25px;\n}\nnav.bottom_bar_wrapper > a + a[data-v-1bd27444] {\n    border-top: 1px solid var(--border_color);\n}\n.bottom_bar_wrapper .mobile_category_close[data-v-1bd27444] {\n    position: absolute;\n    top: 10px;\n    right: 10px;\n    width: 35px;\n    height: 35px;\n    display: grid;\n    place-content: center;\n    background-color: var(--danger_color);\n    color: #fff;\n}\n}\n@media all and (max-width: 768px) {\n.middlebar_wrapper > *[data-v-1bd27444] {\n    display: flex;\n    flex-wrap: wrap;\n    justify-content: space-between;\n}\n.middlebar_wrapper form[data-v-1bd27444] {\n    max-width: 80%;\n    min-width: 80%;\n    display: block;\n    order: 2;\n}\n.middlebar_wrapper form button[type=submit][data-v-1bd27444] {\n    right: 5px;\n    left: unset;\n    transform: translateY(-50%);\n}\n.middlebar_wrapper .brand_logo[data-v-1bd27444] {\n    order: 0;\n    width: 150px;\n}\n.middlebar_wrapper .login_registration[data-v-1bd27444] {\n    order: 1;\n    width: 50%;\n    justify-self: flex-end;\n}\n}\n@media all and (max-width: 500px) {\n.middlebar_wrapper .login_registration .icon[data-v-1bd27444] {\n    display: none;\n}\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

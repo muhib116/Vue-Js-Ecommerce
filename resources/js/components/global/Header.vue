@@ -83,14 +83,18 @@
                 </form>
 
                 <div class="login_registration">
+                    <router-link class="wishlist_btn compare_btn" :to="{name: 'Wishlist'}">
+                        <i class="fa fa-columns"></i>
+                        <span class="count">3</span>
+                    </router-link>
                     <router-link class="wishlist_btn" :to="{name: 'Wishlist'}">
                         <i class="fa fa-heart"></i>
                         <span class="count">5</span>
                     </router-link>
                     <i class="icon fa fa-user"></i>
-                    <a href="#">Login</a>
+                    <!-- <a href="#">Login</a>
                     <span>|</span>
-                    <a href="#">Registration</a>
+                    <a href="#">Registration</a> -->
                 </div>
 
             </div>
@@ -260,23 +264,32 @@
         border-radius: 50%;
         color: #fff;
         margin-right: 5px;
-    }
 
-    .wishlist_btn .count {
-        position: absolute;
-        top: 2px;
-        right: 2px;
-        transform: translate(50%, -50%);
-        font-size: 0.8rem !important;
-        aspect-ratio: 1/1;
-        display: grid;
-        place-content: center;
-        width: 25px;
-        background: var(--danger_color);
-        border-radius: 50%;
-        box-shadow: 0 1px 4px #0002;
-        color: white;
-        border: 2px solid;
+        .count {
+            position: absolute;
+            top: 2px;
+            right: 2px;
+            transform: translate(50%, -50%);
+            font-size: 0.8rem !important;
+            aspect-ratio: 1/1;
+            display: grid;
+            place-content: center;
+            width: 25px;
+            background: var(--danger_color);
+            border-radius: 50%;
+            box-shadow: 0 1px 4px #0002;
+            color: white;
+            border: 2px solid;
+        }
+
+        &.compare_btn{
+            background: var(--secondary_color);
+            box-shadow: 0 1px 10px var(--secondary_color);
+
+            .count {
+                background: var(--secondary_color);
+            }
+        }
     }
     /* middlebar end */
 

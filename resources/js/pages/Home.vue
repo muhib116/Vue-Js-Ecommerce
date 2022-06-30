@@ -15,14 +15,14 @@
 </script>
 
 <template>
-    <Banner3 />
+    <Banner2 />
     <Categories />
     <Products title="Todays Deal" />
-    <Banner2 />
+    <Banner />
     <Products title="New Arraival" product_type="new_arrival" />
     <BigBanner />
     <Products title="Top Rated" product_type="top_ratted" />
-    <Banner />
+    <Banner3 />
     <FeaturedShop />
     <Coupon />
     <BestSellingProducts />
